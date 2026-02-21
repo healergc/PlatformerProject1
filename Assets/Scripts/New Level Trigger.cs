@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewLevelTrigger : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class NewLevelTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("I Have Found A Player")
+            Debug.Log("I Have Found A Player");
+            SceneManager.LoadScene("SecondLevel");
         }
     }
 }
